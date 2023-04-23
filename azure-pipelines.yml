@@ -1,4 +1,10 @@
 # HTML
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Visual Studio Enterprise with MSDN(dd7dd2b4-660d-40f2-8279-a9ca6dc135b8)'
+    appType: 'webAppLinux'
+    appName: 'app-Azurehelloworld-230406113433'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Archive your static HTML project and save it with the build record.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
